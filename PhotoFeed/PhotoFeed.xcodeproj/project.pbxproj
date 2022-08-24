@@ -22,6 +22,7 @@
 		37C4518028B6D7E300631FEB /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37C4517F28B6D7E300631FEB /* Ubuntu-Bold.ttf */; };
 		37C4518228B6D7F000631FEB /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37C4518128B6D7F000631FEB /* Ubuntu-Light.ttf */; };
 		37C4518528B6DEF700631FEB /* UIButtonFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C4518428B6DEF700631FEB /* UIButtonFeed.swift */; };
+		37C4518828B6DF9400631FEB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C4518728B6DF9400631FEB /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		37C4517F28B6D7E300631FEB /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
 		37C4518128B6D7F000631FEB /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
 		37C4518428B6DEF700631FEB /* UIButtonFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonFeed.swift; sourceTree = "<group>"; };
+		37C4518728B6DF9400631FEB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +90,9 @@
 		3740FD4A28B6CCEC00B19C43 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				37C4518628B6DF8500631FEB /* Login */,
 				37C4518328B6DEE300631FEB /* Components */,
-				3740FD4F28B6CD0B00B19C43 /* Login */,
+				3740FD4F28B6CD0B00B19C43 /* Onboarding */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -103,14 +106,14 @@
 			path = SuportedFiles;
 			sourceTree = "<group>";
 		};
-		3740FD4F28B6CD0B00B19C43 /* Login */ = {
+		3740FD4F28B6CD0B00B19C43 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
 				3740FD5328B6CE0D00B19C43 /* OnboardingCoordinator.swift */,
 				3740FD3628B6CB5500B19C43 /* OnboardingViewController.swift */,
 				3740FD4828B6CCB100B19C43 /* OnboardingView.swift */,
 			);
-			path = Login;
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		37C4517728B6D6BC00631FEB /* Extensions */ = {
@@ -140,6 +143,14 @@
 				37C4518428B6DEF700631FEB /* UIButtonFeed.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		37C4518628B6DF8500631FEB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				37C4518728B6DF9400631FEB /* LoginViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +235,7 @@
 				3740FD4928B6CCB100B19C43 /* OnboardingView.swift in Sources */,
 				3740FD5828B6D31F00B19C43 /* UIColor+Extensions.swift in Sources */,
 				3740FD3528B6CB5500B19C43 /* SceneDelegate.swift in Sources */,
+				37C4518828B6DF9400631FEB /* LoginViewController.swift in Sources */,
 				3740FD5628B6CF0700B19C43 /* ViewCodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
