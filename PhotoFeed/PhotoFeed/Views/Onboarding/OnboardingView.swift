@@ -34,6 +34,7 @@ final class OnboardingView: UIView {
         button.setTitle("Criar nova conta", for: .normal)
         button.backgroundColor = .init(rgb: 0xEFA85C)
         button.layer.cornerRadius = 5
+        button.titleLabel?.font = UIFontStyle.customFont(name: .f18PrimaryMedium)
         return button
     }()
     
@@ -42,6 +43,7 @@ final class OnboardingView: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Entrar", for: .normal)
         button.setTitleColor(UIColor.init(rgb: 0xEFA85C), for: .normal)
+        button.titleLabel?.font = UIFontStyle.customFont(name: .f18PrimaryMedium)
         return button
     }()
     
