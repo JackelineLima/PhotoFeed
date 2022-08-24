@@ -19,6 +19,7 @@ class OnboardingViewController: UIViewController {
     
     override func loadView() {
         super.loadView()
+        loginView.delegate = self
         view = loginView
     }
 
@@ -28,6 +29,16 @@ class OnboardingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+}
+
+extension OnboardingViewController: OnboardingViewDelegate {
+    func navigateToLogin() {
+        coordinator.navigateToLogin()
+    }
+    
+    func navigateToCreateAccount() {
+        coordinator.navigateToCreateAccount()
     }
 }
 

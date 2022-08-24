@@ -9,6 +9,8 @@ import UIKit
 
 protocol OnboardingCoordinatorProtocol: AnyObject {
     func start()
+    func navigateToLogin()
+    func navigateToCreateAccount()
 }
 class OnboardingCoordinator: OnboardingCoordinatorProtocol {
     
@@ -21,5 +23,13 @@ class OnboardingCoordinator: OnboardingCoordinatorProtocol {
     func start() {
         let controller = OnboardingViewController(coordinator: self)
         navigationController.pushViewController(controller, animated: true)
+    }
+    
+    func navigateToLogin() {
+        print("******** login ******")
+    }
+    
+    func navigateToCreateAccount() {
+        print("******** criar conta ******")
     }
 }
