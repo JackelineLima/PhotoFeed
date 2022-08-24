@@ -8,49 +8,62 @@
 import UIKit
 
 public struct UIFontWeight {
-    public static let primarySemiBold: String = "Nunito-SemiBold"
-    public static let primaryExtraBold: String = "Nunito-ExtraBold"
-    public static let primaryMedium: String = "Nunito-Medium"
-    public static let primaryRegular: String = "Nunito-Regular"
-    public static let primaryBold: String = "Nunito-Bold"
+    //300
+    public static let primaryLight: String = "Ubuntu-Light"
+    //500
+    public static let primaryMedium: String = "Ubuntu-Medium"
+    //400
+    public static let primaryRegular: String = "Ubuntu-Regular"
+    //700
+    public static let primaryBold: String = "Ubuntu-Bold"
 }
 
 public enum UIFontStyle {
-    case f10PrimaryRegular
-    case f12PrimarySemiBold
-    case f14PrimaryMedium
+    case f11PrimaryRegular
+    case f13PrimaryRegular
+    case f14PrimaryRegular
+    case f14PrimaryBold
+    case f15PrimaryLight
+    case f16PrimaryBold
+    case f16PrimaryRegular
+    case f18PrimaryRegular
     case f18PrimaryMedium
-    case f25PrimaryExtraBold
-    case f30PrimaryExtraBold
+    case f20PrimaryBold
+    case f23PrimaryBold
     
     public var weight: String {
         switch self {
-        case .f10PrimaryRegular:
+        case .f11PrimaryRegular, .f13PrimaryRegular, .f14PrimaryRegular, .f16PrimaryRegular, .f18PrimaryRegular:
             return UIFontWeight.primaryRegular
-        case .f12PrimarySemiBold:
-            return UIFontWeight.primarySemiBold
-        case .f14PrimaryMedium, .f18PrimaryMedium:
+        case .f14PrimaryBold, .f16PrimaryBold, .f20PrimaryBold, .f23PrimaryBold:
+            return UIFontWeight.primaryBold
+        case .f15PrimaryLight:
+            return UIFontWeight.primaryLight
+        case .f18PrimaryMedium:
             return UIFontWeight.primaryMedium
-        case .f30PrimaryExtraBold, .f25PrimaryExtraBold:
-            return UIFontWeight.primaryExtraBold
         }
+        
     }
     
     public var size: CGFloat {
         var size: CGFloat = 0
         switch self {
-        case .f10PrimaryRegular:
-            size = 10
-        case .f12PrimarySemiBold:
-            size = 12
-        case .f14PrimaryMedium:
+        case .f11PrimaryRegular:
+            size = 11
+        case .f13PrimaryRegular:
+            size = 13
+        case .f14PrimaryRegular, .f14PrimaryBold:
             size = 14
-        case .f18PrimaryMedium:
+        case .f15PrimaryLight:
+            size = 15
+        case .f16PrimaryBold, .f16PrimaryRegular:
+            size = 16
+        case .f18PrimaryRegular, .f18PrimaryMedium:
             size = 18
-        case .f25PrimaryExtraBold:
-            size = 25
-        case .f30PrimaryExtraBold:
-            size = 30
+        case .f20PrimaryBold:
+            size = 20
+        case .f23PrimaryBold:
+            size = 23
         }
         return size
     }
