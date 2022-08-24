@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-final class LoginView: UIView {
+final class OnboardingView: UIView {
     
     private let stackView: UIStackView = {
         let stackView = UIStackView()
@@ -56,7 +56,7 @@ final class LoginView: UIView {
     }
 }
 
-extension LoginView: ViewCodable {
+extension OnboardingView: ViewCodable {
     func buildViewHierarchy() {
         addSubview(stackView)
         stackView.addArrangedSubview(logoFeedImageView)
@@ -73,9 +73,11 @@ extension LoginView: ViewCodable {
             
             photoFeedButton.leadingAnchor.constraint(equalTo: stackView.leadingAnchor),
             photoFeedButton.trailingAnchor.constraint(equalTo: stackView.trailingAnchor),
+            photoFeedButton.heightAnchor.constraint(equalToConstant: 47),
             
             logInButton.leadingAnchor.constraint(equalTo: stackView.leadingAnchor),
             logInButton.trailingAnchor.constraint(equalTo: stackView.trailingAnchor),
+            logInButton.heightAnchor.constraint(equalToConstant: 47),
         ])
     }
     

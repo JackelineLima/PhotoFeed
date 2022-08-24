@@ -9,10 +9,10 @@ import UIKit
 
 class OnboardingViewController: UIViewController {
     
-    private let loginView = LoginView()
-    private let coordinator: LoginCoordinatorProtocol
+    private let loginView = OnboardingView()
+    private let coordinator: OnboardingCoordinatorProtocol
 
-    init(coordinator: LoginCoordinatorProtocol) {
+    init(coordinator: OnboardingCoordinatorProtocol) {
         self.coordinator = coordinator
         super.init(nibName: nil, bundle: nil)
     }

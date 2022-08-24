@@ -7,10 +7,10 @@
 
 import UIKit
 
-protocol LoginCoordinatorProtocol: AnyObject {
+protocol OnboardingCoordinatorProtocol: AnyObject {
     func start()
 }
-class LoginCoordinator: LoginCoordinatorProtocol {
+class OnboardingCoordinator: OnboardingCoordinatorProtocol {
     
     private var navigationController: UINavigationController
     
@@ -19,7 +19,7 @@ class LoginCoordinator: LoginCoordinatorProtocol {
     }
     
     func start() {
-        let controller = LoginViewController(coordinator: self)
+        let controller = OnboardingViewController(coordinator: self)
         navigationController.pushViewController(controller, animated: true)
     }
 }
