@@ -35,17 +35,6 @@ final class OnboardingView: UIView {
         return view
     }()
     
-//    private lazy var createAccountButton: UIButton = {
-//        let button = UIButton()
-//        button.translatesAutoresizingMaskIntoConstraints = false
-//        button.setTitle("Criar nova conta", for: .normal)
-//        button.backgroundColor = .init(rgb: 0xEFA85C)
-//        button.layer.cornerRadius = 5
-//        button.titleLabel?.font = UIFontStyle.customFont(name: .f18PrimaryMedium)
-//        button.addTarget(self, action: #selector(navigateToCreateAccount), for: .touchUpInside)
-//        return button
-//    }()
-    
     private lazy var createAccountButton: UIButtonFeed = {
         let button = UIButtonFeed()
         button.translatesAutoresizingMaskIntoConstraints = false
