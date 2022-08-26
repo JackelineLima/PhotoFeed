@@ -2,15 +2,16 @@
 //  LoginCoordinator.swift
 //  PhotoFeed
 //
-//  Created by Jackeline Pires De Lima on 24/08/22.
+//  Created by Jackeline Pires De Lima on 25/08/22.
 //
 
 import UIKit
 
-protocol LoginCoordinatorProtocol: AnyObject {
+protocol LoginCoodinatorProtocol: AnyObject {
     func start()
 }
-class LoginCoordinator: LoginCoordinatorProtocol {
+
+class LoginCoodinator: LoginCoodinatorProtocol {
     
     private var navigationController: UINavigationController
     
@@ -19,7 +20,7 @@ class LoginCoordinator: LoginCoordinatorProtocol {
     }
     
     func start() {
-        let controller = LoginViewController(coordinator: self)
+        let controller = LoginViewController(coodinator: self)
         navigationController.pushViewController(controller, animated: true)
     }
 }

@@ -10,7 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    private var coordinator: LoginCoordinatorProtocol?
+    private var coordinator: OnboardingCoordinatorProtocol?
     private let navigationController: UINavigationController = {
          let navigationController = UINavigationController()
          return navigationController
@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         window?.rootViewController = navigationController
-        let coordinator = LoginCoordinator(navigationController: navigationController)
+        let coordinator = OnboardingCoordinator(navigationController: navigationController)
         coordinator.start()
         window?.makeKeyAndVisible()
         self.coordinator = coordinator

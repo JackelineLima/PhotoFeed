@@ -9,37 +9,51 @@
 /* Begin PBXBuildFile section */
 		3740FD3328B6CB5500B19C43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740FD3228B6CB5500B19C43 /* AppDelegate.swift */; };
 		3740FD3528B6CB5500B19C43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740FD3428B6CB5500B19C43 /* SceneDelegate.swift */; };
-		3740FD3728B6CB5500B19C43 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740FD3628B6CB5500B19C43 /* LoginViewController.swift */; };
+		3740FD3728B6CB5500B19C43 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740FD3628B6CB5500B19C43 /* OnboardingViewController.swift */; };
 		3740FD3C28B6CB5700B19C43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3740FD3B28B6CB5700B19C43 /* Assets.xcassets */; };
 		3740FD3F28B6CB5700B19C43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3740FD3D28B6CB5700B19C43 /* LaunchScreen.storyboard */; };
-		3740FD4928B6CCB100B19C43 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740FD4828B6CCB100B19C43 /* LoginView.swift */; };
-		3740FD5428B6CE0D00B19C43 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740FD5328B6CE0D00B19C43 /* LoginCoordinator.swift */; };
+		3740FD4928B6CCB100B19C43 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740FD4828B6CCB100B19C43 /* OnboardingView.swift */; };
+		3740FD5428B6CE0D00B19C43 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740FD5328B6CE0D00B19C43 /* OnboardingCoordinator.swift */; };
 		3740FD5628B6CF0700B19C43 /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740FD5528B6CF0700B19C43 /* ViewCodable.swift */; };
 		3740FD5828B6D31F00B19C43 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740FD5728B6D31F00B19C43 /* UIColor+Extensions.swift */; };
+		3787A4B028B6F69B00C880C0 /* CreateAccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787A4AD28B6F69B00C880C0 /* CreateAccountCoordinator.swift */; };
+		3787A4B128B6F69B00C880C0 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787A4AE28B6F69B00C880C0 /* CreateAccountViewController.swift */; };
+		3787A4B228B6F69B00C880C0 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787A4AF28B6F69B00C880C0 /* CreateAccountView.swift */; };
+		37C183C628B6EDD700F3D866 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C183C528B6EDD700F3D866 /* LoginView.swift */; };
 		37C4517A28B6D6D900631FEB /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C4517928B6D6D900631FEB /* Fonts.swift */; };
 		37C4517C28B6D7C900631FEB /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37C4517B28B6D7C900631FEB /* Ubuntu-Medium.ttf */; };
 		37C4517E28B6D7D400631FEB /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37C4517D28B6D7D400631FEB /* Ubuntu-Regular.ttf */; };
 		37C4518028B6D7E300631FEB /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37C4517F28B6D7E300631FEB /* Ubuntu-Bold.ttf */; };
 		37C4518228B6D7F000631FEB /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37C4518128B6D7F000631FEB /* Ubuntu-Light.ttf */; };
+		37C4518528B6DEF700631FEB /* UIButtonFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C4518428B6DEF700631FEB /* UIButtonFeed.swift */; };
+		37C4518828B6DF9400631FEB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C4518728B6DF9400631FEB /* LoginViewController.swift */; };
+		37C6F96428B84C450046137C /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6F96328B84C450046137C /* LoginCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3740FD2F28B6CB5500B19C43 /* PhotoFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3740FD3228B6CB5500B19C43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3740FD3428B6CB5500B19C43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3740FD3628B6CB5500B19C43 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3740FD3628B6CB5500B19C43 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		3740FD3B28B6CB5700B19C43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3740FD3E28B6CB5700B19C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3740FD4028B6CB5700B19C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3740FD4828B6CCB100B19C43 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		3740FD5328B6CE0D00B19C43 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		3740FD4828B6CCB100B19C43 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		3740FD5328B6CE0D00B19C43 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 		3740FD5528B6CF0700B19C43 /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
 		3740FD5728B6D31F00B19C43 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		3787A4AD28B6F69B00C880C0 /* CreateAccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountCoordinator.swift; sourceTree = "<group>"; };
+		3787A4AE28B6F69B00C880C0 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		3787A4AF28B6F69B00C880C0 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		37C183C528B6EDD700F3D866 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		37C4517928B6D6D900631FEB /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		37C4517B28B6D7C900631FEB /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
 		37C4517D28B6D7D400631FEB /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
 		37C4517F28B6D7E300631FEB /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
 		37C4518128B6D7F000631FEB /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		37C4518428B6DEF700631FEB /* UIButtonFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonFeed.swift; sourceTree = "<group>"; };
+		37C4518728B6DF9400631FEB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		37C6F96328B84C450046137C /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +100,10 @@
 		3740FD4A28B6CCEC00B19C43 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3740FD4F28B6CD0B00B19C43 /* Login */,
+				37C4518328B6DEE300631FEB /* Components */,
+				3787A4B328B6F6C800C880C0 /* CreateAccount */,
+				37C4518628B6DF8500631FEB /* Login */,
+				3740FD4F28B6CD0B00B19C43 /* Onboarding */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -100,14 +117,24 @@
 			path = SuportedFiles;
 			sourceTree = "<group>";
 		};
-		3740FD4F28B6CD0B00B19C43 /* Login */ = {
+		3740FD4F28B6CD0B00B19C43 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				3740FD5328B6CE0D00B19C43 /* LoginCoordinator.swift */,
-				3740FD3628B6CB5500B19C43 /* LoginViewController.swift */,
-				3740FD4828B6CCB100B19C43 /* LoginView.swift */,
+				3740FD5328B6CE0D00B19C43 /* OnboardingCoordinator.swift */,
+				3740FD3628B6CB5500B19C43 /* OnboardingViewController.swift */,
+				3740FD4828B6CCB100B19C43 /* OnboardingView.swift */,
 			);
-			path = Login;
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		3787A4B328B6F6C800C880C0 /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				3787A4AD28B6F69B00C880C0 /* CreateAccountCoordinator.swift */,
+				3787A4AE28B6F69B00C880C0 /* CreateAccountViewController.swift */,
+				3787A4AF28B6F69B00C880C0 /* CreateAccountView.swift */,
+			);
+			path = CreateAccount;
 			sourceTree = "<group>";
 		};
 		37C4517728B6D6BC00631FEB /* Extensions */ = {
@@ -129,6 +156,24 @@
 				37C4517928B6D6D900631FEB /* Fonts.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		37C4518328B6DEE300631FEB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				37C4518428B6DEF700631FEB /* UIButtonFeed.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		37C4518628B6DF8500631FEB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				37C4518728B6DF9400631FEB /* LoginViewController.swift */,
+				37C183C528B6EDD700F3D866 /* LoginView.swift */,
+				37C6F96328B84C450046137C /* LoginCoordinator.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,12 +251,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				37C4517A28B6D6D900631FEB /* Fonts.swift in Sources */,
-				3740FD3728B6CB5500B19C43 /* LoginViewController.swift in Sources */,
+				3740FD3728B6CB5500B19C43 /* OnboardingViewController.swift in Sources */,
+				3787A4B028B6F69B00C880C0 /* CreateAccountCoordinator.swift in Sources */,
+				37C4518528B6DEF700631FEB /* UIButtonFeed.swift in Sources */,
 				3740FD3328B6CB5500B19C43 /* AppDelegate.swift in Sources */,
-				3740FD5428B6CE0D00B19C43 /* LoginCoordinator.swift in Sources */,
-				3740FD4928B6CCB100B19C43 /* LoginView.swift in Sources */,
+				3787A4B128B6F69B00C880C0 /* CreateAccountViewController.swift in Sources */,
+				3740FD5428B6CE0D00B19C43 /* OnboardingCoordinator.swift in Sources */,
+				3740FD4928B6CCB100B19C43 /* OnboardingView.swift in Sources */,
 				3740FD5828B6D31F00B19C43 /* UIColor+Extensions.swift in Sources */,
 				3740FD3528B6CB5500B19C43 /* SceneDelegate.swift in Sources */,
+				3787A4B228B6F69B00C880C0 /* CreateAccountView.swift in Sources */,
+				37C183C628B6EDD700F3D866 /* LoginView.swift in Sources */,
+				37C6F96428B84C450046137C /* LoginCoordinator.swift in Sources */,
+				37C4518828B6DF9400631FEB /* LoginViewController.swift in Sources */,
 				3740FD5628B6CF0700B19C43 /* ViewCodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
