@@ -35,43 +35,51 @@ final class OnboardingView: UIView {
         return view
     }()
     
-    private lazy var createAccountButton: UIButton = {
-        let button = UIButton()
+//    private lazy var createAccountButton: UIButton = {
+//        let button = UIButton()
+//        button.translatesAutoresizingMaskIntoConstraints = false
+//        button.setTitle("Criar nova conta", for: .normal)
+//        button.backgroundColor = .init(rgb: 0xEFA85C)
+//        button.layer.cornerRadius = 5
+//        button.titleLabel?.font = UIFontStyle.customFont(name: .f18PrimaryMedium)
+//        button.addTarget(self, action: #selector(navigateToCreateAccount), for: .touchUpInside)
+//        return button
+//    }()
+    
+    private lazy var createAccountButton: UIButtonFeed = {
+        let button = UIButtonFeed()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Criar nova conta", for: .normal)
-        button.backgroundColor = .init(rgb: 0xEFA85C)
-        button.layer.cornerRadius = 5
-        button.titleLabel?.font = UIFontStyle.customFont(name: .f18PrimaryMedium)
-        button.addTarget(self, action: #selector(navigateToCreateAccount), for: .touchUpInside)
+        button.setupLayout(title: "Criar nova conta")
         return button
     }()
     
-    private lazy var logInButton: UIButton = {
-        let button = UIButton()
+    private lazy var logInButton: UIButtonFeed = {
+        let button = UIButtonFeed()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Entrar", for: .normal)
-        button.setTitleColor(UIColor.init(rgb: 0xEFA85C), for: .normal)
-        button.titleLabel?.font = UIFontStyle.customFont(name: .f18PrimaryMedium)
-        button.addTarget(self, action: #selector(navigateToLogin), for: .touchUpInside)
+        button.setupLayout(style: .buttonWithoutBackground,
+                           title: "Entrar")
         return button
     }()
     
     init() {
         super.init(frame: .zero)
-        setupView()
         backgroundColor = .white
+        setupView()
+        navigation()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    @objc func navigateToLogin() {
-        delegate?.navigateToLogin()
-    }
-    
-    @objc func navigateToCreateAccount() {
-        delegate?.navigateToCreateAccount()
+    private func navigation() {
+        createAccountButton.setAction { [weak self] in
+            self?.delegate?.navigateToCreateAccount()
+        }
+        
+        logInButton.setAction { [weak self] in
+            self?.delegate?.navigateToLogin()
+        }
     }
 }
 
