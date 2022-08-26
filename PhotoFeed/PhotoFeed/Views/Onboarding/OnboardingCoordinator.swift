@@ -26,10 +26,12 @@ class OnboardingCoordinator: OnboardingCoordinatorProtocol {
     }
     
     func navigateToLogin() {
-        print("******** login ******")
+        let coordinatoor = LoginCoodinator(navigationController: navigationController)
+        coordinatoor.start()
     }
     
     func navigateToCreateAccount() {
-        print("******** criar conta ******")
+        let coordinatoor = CreateAccountCoordinator(navigationController: navigationController)
+        coordinatoor.start()
     }
 }
